@@ -55,6 +55,44 @@
     margin-bottom: 20px;
 }
 
+/* Practice Section */
+.practice-container {
+    background-color: #6c63ff;
+    display: flex;
+    justify-content: center;
+}
+
+.practice {
+    width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.practice h1 {
+    margin-bottom: 24px;
+    color: #fff;
+}
+
+.button a {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 4px;
+    background-color: #fff;
+    border: none;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.button a:hover {
+    background-color: #1e1e1e;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
 /* Photo Section */
 .photo-grid-container {
     display: flex;
