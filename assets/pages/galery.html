@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
+    <title>Dea's Gallery</title>
     <link rel="stylesheet" href="../css/galery-style.css">
 </head>
 <body>
-
     <!-- Navbar Section -->
     <nav class="navbar-container">
         <div class="navbar">
             <div class="logo">
                 <img src="../images/awesome-logo.svg" alt="Logo" width="200">
             </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul class="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About Me</a></li>
@@ -29,10 +33,9 @@
     <!-- Profile Section -->
     <section class="profile-container">
         <div class="profile">
-
             <!-- Card One -->
             <div class="card one">
-                <img src="../images/dea.png" alt="">
+                <img src="../images/dea.png" alt="Dea's Profile Photo">
             </div>
 
             <!-- Card Two -->
@@ -80,26 +83,32 @@
 
             <!-- Card Three -->
             <div class="card three">
-                <div class="card-three left">
+                <div class="card-content">
+                    <div class="icon-text">
                     <div class="icon">
-                        <img src="../images/camera-svgrepo-com.svg" alt="Camera Icon">
-                    </div>
-                    <div class="text">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                    </div>
-                    <div class="button">
-                        <a href="#">This is Button</a>
-                    </div>
-                </div>
-                <div class="card-three right">
-                    <div class="image">
-                        <img src="../images/Fuji Camera.png" alt="Fuji Camera" width="250">
-                    </div>
-                </div>
+                    <img src="../images/camera-svgrepo-com.svg" alt="Camera Icon">
             </div>
-
+            <div class="text">
+                <p>Discover my photography journey and explore my collection of captured moments from around the world.</p>
+            </div>
         </div>
+        <div class="button-wrapper">
+            <a href="#" class="button">View Gallery</a>
+        </div>
+        <div class="camera-image">
+            <img src="../images/Fuji Camera.png" alt="Fuji Camera" class="floating-camera">
+        </div>
+    </div>
+</div>
     </section>
 
+    <script>
+        // Mobile menu toggle functionality
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+            document.querySelector('.button-group').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
